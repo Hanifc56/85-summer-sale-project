@@ -119,7 +119,8 @@
                         <h4 class="text-2xl font-medium text-start  pb-4">Have coupon?</h4>
                         <div class=" border-2 rounded-lg border-gray-400 text-center flex justify-between">
                             <input class="outline-none border-none pl-4" type="text" placeholder="Coupon code">
-                            <button class="px-6 py-4 bg-[#E527B2] text-white font-semibold rounded-r-lg">Apply</button>
+                            <button disabled
+                                class="px-6 py-4 bg-[#E527B2] text-white font-semibold rounded-r-lg">Apply</button>
                         </div>
                         <br class="pb-4">
                     </div>
@@ -136,7 +137,21 @@
                             <p class="text-2xl font-medium">Total: 00 TK </p>
                         </div>
                         <hr class=" border border-black mb-4">
-                        <button class="px-16 py-4 bg-[#E527B2] text-white rounded-lg text-center">Make Purchase</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="px-16 py-4 bg-[#E527B2] text-white rounded-lg text-center"
+                            onclick="my_modal_5.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
 
                 </div>
