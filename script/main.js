@@ -1,49 +1,67 @@
-// step-1 : get the id names 
-function getProductNameBuId() {
-    // get product price 
-    // const productPrice = document.getElementById('spone-price');
-    // const productPriceText = productPrice.innerText;
-    // const productPriceNow = parseFloat(productPriceText);
-    // console.log(productPriceNow);
-    // // get the product name
-    // const productName = document.getElementById('spones');
-    // const productNameText = productName.innerText;
-    // console.log(productNameText);
-}
+
+// product 1
 function getProductName1() {
     const firstPoduct = getProductName('spones');
     const firstPoductPrice = getProductPrice('spone-price');
-    console.log(firstPoductPrice)
-    console.log(firstPoduct);
+    // now get the total price
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = firstPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(firstPoduct);
 }
+
+// product 2
+
 function getProductName2() {
     const secondPoduct = getProductName('Accessories');
     const secondPoductPrice = getProductPrice('Accessories-price');
-    console.log(secondPoductPrice);
-    console.log(secondPoduct);
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = secondPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(secondPoduct);
 }
+
+// product 3
+
 function getProductName3() {
     const thirdPoduct = getProductName('home-cooker');
     const thirdPoductPrice = getProductPrice('home-cooker-price');
-    console.log(thirdPoduct);
-    console.log(thirdPoductPrice);
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = thirdPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(thirdPoduct);
 }
+
+// product 4
+
 function getProductName4() {
     const fothPoduct = getProductName('back-cap');
     const fothPoductPrice = getProductPrice('back-cap-price');
-    console.log(fothPoduct);
-    console.log(fothPoductPrice);
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = fothPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(fothPoduct);
 }
+
+// product 5
+
 function getProductName5() {
     const fifthPoduct = getProductName('jersey-set');
     const fifthPoductPrice = getProductPrice('jersey-price');
-    console.log(fifthPoduct);
-    console.log(fifthPoductPrice);
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = fifthPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(fifthPoduct);
 }
+
+// product 6
+
 function getProductName6() {
     const sixthPoduct = getProductName('cates');
-    const sixthPoductPrice = getProductName('cates-price');
-    console.log(sixthPoduct);
-    console.log(sixthPoductPrice);
+    const sixthPoductPrice = getProductPrice('cates-price');
+    const totalPrice = getProductPrice('total-price');
+    const totalPriceToPay = sixthPoductPrice + totalPrice;
+    setElementText('total-price', totalPriceToPay);
+    addNametoCart(sixthPoduct);
 }
-// step-2 : get the product price
+

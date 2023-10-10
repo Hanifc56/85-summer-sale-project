@@ -11,7 +11,19 @@ function getProductPrice(productPrice) {
     const productRealPrice = parseFloat(productMoneyText);
     return productRealPrice;
 }
-// 
+// set the innertext of the total price
+function setElementText(elementId, elemnetValue) {
+    const element = document.getElementById(elementId);
+    element.innerText = elemnetValue;
+}
+// add products to the cart
 function addNametoCart(productName) {
-    const addName = productIdText;
+    // get the element were to add
+    const productEntry = document.getElementById('added-items');
+    const count = productEntry.childElementCount;
+    const p = document.createElement('p');
+    p.classList;
+    p.innerHTML = `${count + 1}. ${productName}`;
+    // add to the div
+    productEntry.appendChild(p);
 }

@@ -26,9 +26,9 @@
         <!-- banner section -->
         <section class="flex flex-col md:flex-col lg:flex-row  items-center bg-[#F9F6E2] md:w-auto lg:h-[873px]">
             <!-- text -->
-            <div class="flex-1 text-center">
-                <h3 class="text-4xl font-medium">---SALE FEVER---</h3>
-                <h1 class="text-5xl font-bold mt-11 mb-16">
+            <div class=" flex-1 text-center">
+                <h3 class="pt-8 lg:pt-0 text-3xl lg:text-4xl font-medium">---SALE FEVER---</h3>
+                <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold mt-11 mb-16">
                     Purchase TK 200 or
                     <br>
                     above & get <span class="text-[#E527B2]">
@@ -45,17 +45,17 @@
             </div>
         </section>
     </header>
-    <main class="lg:my-32 lg:mx-60 ">
+    <main class="lg:my-32 lg:mx-auto">
         <!-- Main contianer -->
         <section class="flex flex-col lg:flex-row ">
             <!-- Items container -->
-            <div class="flex-1">
+            <div class="flex-1 lg:pl-8 pb-8 px-8">
                 <!-- product section - 1 -->
                 <div>
                     <h3 class="text-4xl font-semibold mb-8">Kitchenware</h3>
                     <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <!-- first card -->
-                        <div onclick="getProductName1()" id="card1" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName1()" id="card1" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <!-- second card -->
-                        <div onclick="getProductName2()" id="card2" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName2()" id="card2" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <!-- third card -->
-                        <div onclick="getProductName3()" id="card3" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName3()" id="card3" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -121,7 +121,7 @@
                     <h3 class="text-4xl font-semibold mb-8 mt-14">Sportswear</h3>
                     <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <!-- fourth card -->
-                        <div onclick="getProductName4()" id="card4" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName4()" id="card4" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <!-- fifth card -->
-                        <div onclick="getProductName5()" id="card5" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName5()" id="card5" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <!-- sixth card -->
-                        <div onclick="getProductName6()" id="card6" class="card w-96 bg-white shadow-lg ">
+                        <div onclick="getProductName6()" id="card6" class="card lg:w-96 bg-white shadow-lg ">
                             <figure class="bg-[#1111110D] mx-5 my-5 h-[200px] rounded-xl ">
                                 <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -187,7 +187,7 @@
             <!-- order history and cart  -->
             <div class="lg:w-[450px] lg:mt-16">
                 <!-- cupon part -->
-                <div class="">
+                <div class="px-8 pb-8">
                     <div class="bg-white rounded-lg
                     lg:w-[400px] 
                     pt-4 px-6">
@@ -208,7 +208,7 @@
                         </div>
                         <hr class=" border border-black">
                         <div>
-                            <p class="text-2xl font-medium">Total price: 00 TK </p>
+                            <p class="text-2xl font-medium">Total price: <span id="total-price">00</span> TK </p>
                             <p class="text-2xl font-medium">Discount : 00 TK </p>
                             <p class="text-2xl font-medium">Total: 00 TK </p>
                         </div>
