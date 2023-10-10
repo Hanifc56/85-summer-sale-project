@@ -193,28 +193,28 @@
                     pt-4 px-6">
                         <h4 class="text-2xl font-medium text-start  pb-4">Have coupon?</h4>
                         <div class=" border-2 rounded-lg border-blue-500 text-center flex justify-between">
-                            <input class="outline-none border-none pl-4 bg-transparent" type="text"
+                            <input id="cupon-input" class="outline-none border-none pl-4 bg-transparent" type="text"
                                 placeholder="Coupon code">
-                            <button disabled id="cupon-btn"
+                            <button disabled onclick="cuponBtnApply()" id="cupon-btn"
                                 class="px-6 py-4 bg-[#E527B2] text-white font-semibold rounded-r-lg">Apply</button>
                         </div>
                         <br class="pb-4">
                     </div>
                     <div class=" bg-white rounded-lg lg:w-[400px]  mt-6 p-6">
 
-                        <h3 class="text-2xl font-medium">Orders:</h3>
+                        <h3 class="text-2xl font-bold">Orders:</h3>
                         <div id="added-items">
 
                         </div>
                         <hr class=" border border-black">
                         <div>
                             <p class="text-2xl font-medium">Total price: <span id="total-price">00</span> TK </p>
-                            <p class="text-2xl font-medium">Discount : 00 TK </p>
-                            <p class="text-2xl font-medium">Total: 00 TK </p>
+                            <p class="text-2xl font-medium">Discount : <span id="discounted-price">00</span> TK </p>
+                            <p class="text-2xl font-medium">Total: <span id="total-pyment">00</span> TK </p>
                         </div>
                         <hr class=" border border-black mb-4">
                         <!-- The button to open modal -->
-                        <button
+                        <button disabled id="make-purchase-btn"
                             class="m-6 px-8 py-4 bg-[#E527B2] text-white rounded-lg text-center text-2xl font-semibold"
                             onclick="my_modal_1.showModal()">Make Purchase</button>
                         <dialog id="my_modal_1" class="modal">
@@ -227,7 +227,7 @@
                                     <p class="font-normal text-xl">Your Purchase the product</p>
                                     <div class="card-actions">
                                         <form method="dialog">
-                                            <button id="my_modal_6"
+                                            <button onclick="clearCart()" id="my_modal_6"
                                                 class="btn px-11 py-4 bg-[#E527B2] text-white rounded-lg text-center">Go
                                                 Home</button>
                                         </form>
